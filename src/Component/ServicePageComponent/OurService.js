@@ -1,8 +1,18 @@
 // src/Pages/OurService.js
-import React from 'react';
-import { Container, Typography, Box } from '@mui/material';
+import React, { useState } from 'react';
+import { Container, Typography, Box, Button } from '@mui/material';
 
 const OurService = () => {
+  const [hover, setHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
+
   return (
     <Box
       sx={{
@@ -31,18 +41,65 @@ const OurService = () => {
             display: 'flex',
             justifyContent: 'center',
             mt: 4, // Margin top for spacing
+            position: 'relative',
           }}
         >
-          <img
-            src="Image (2).png"
-            alt="Our Service"
-            style={{
-              maxWidth: '20%', // Decreased size
-              height: 'auto',
-              zIndex: 1,
-              margin: '0 10px', // Add margin to the left and right
+          <Box
+            sx={{
+              position: 'relative',
+              maxWidth: '20%',
+              margin: '0 10px',
+              '&:hover .overlay': {
+                opacity: 1,
+              },
             }}
-          />
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <img
+              src="Image (2).png"
+              alt="Our Service"
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '8px', // Add border radius to the image
+              }}
+            />
+            {hover && (
+              <Box
+                className="overlay"
+                sx={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  color: '#000',
+                  opacity: 0,
+                  transition: 'opacity 0.3s',
+                  padding: 2,
+                  textAlign: 'center',
+                  borderRadius: '8px', // Add border radius to the overlay
+                }}
+              >
+                <Typography variant="h6" gutterBottom sx={{ color: '#d32f2f', fontWeight: 'bold',fontSize: '0.89rem' }}>
+                  SECURITY GUARDING
+                </Typography>
+                <Typography variant="body2" gutterBottom sx={{ fontSize: '0.69rem' }}>
+                  Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface commonly used to do a demonstrate the visual form of a document or a typeface.
+                </Typography>
+                <Button variant="contained" sx={{ mt: 2, backgroundColor: '#262f69' }}>
+                  Learn More
+                </Button>
+              </Box>
+            )}
+          </Box>
           <img
             src="Image (1).png"
             alt="Our Service"
@@ -102,7 +159,6 @@ const OurService = () => {
             }}
           />
         </Box>
-        
       </Container>
     </Box>
   );
