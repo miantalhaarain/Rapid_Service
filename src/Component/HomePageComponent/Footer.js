@@ -11,9 +11,12 @@ import EmailIcon from "@mui/icons-material/Email";
 export default function Footer() {
   return (
     <Box sx={{ backgroundColor: "#262f69", py: 6 }}>
-      <Container maxWidth="lg">
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={3}>
+      <Container
+        maxWidth="lg"
+        sx={{ mx: 2 }}  // Margin added on left and right
+      >
+        <Grid container spacing={2}> {/* Decreased spacing between columns */}
+          <Grid item xs={12} md={3} sx={{ px: 2 }}> {/* Margin added to each column */}
             <Box>
               <img
                 src="logo-01 copy 1.png"
@@ -73,73 +76,113 @@ export default function Footer() {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={3} sx={{ px: 2 }}>
             <Typography variant="h6" sx={{ color: "#ffffff", mb: 2 }}>
               Quick Links
             </Typography>
             <Link
               href="#"
               color="inherit"
-              sx={{ display: "block", mb: 1, color: "#ffffff" }}
+              sx={{
+                display: "block",
+                mb: 1,
+                color: "#ffffff",
+                textDecoration: "none",
+              }}
             >
               About us
             </Link>
             <Link
               href="#"
               color="inherit"
-              sx={{ display: "block", mb: 1, color: "#ffffff" }}
+              sx={{
+                display: "block",
+                mb: 1,
+                color: "#ffffff",
+                textDecoration: "none",
+              }}
             >
               Services
             </Link>
             <Link
               href="#"
               color="inherit"
-              sx={{ display: "block", mb: 1, color: "#ffffff" }}
+              sx={{
+                display: "block",
+                mb: 1,
+                color: "#ffffff",
+                textDecoration: "none",
+              }}
             >
               Private Policy
             </Link>
             <Link
               href="#"
               color="inherit"
-              sx={{ display: "block", mb: 1, color: "#ffffff" }}
+              sx={{
+                display: "block",
+                mb: 1,
+                color: "#ffffff",
+                textDecoration: "none",
+              }}
             >
               News & Articles
             </Link>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={3} sx={{ px: 2 }}>
             <Typography variant="h6" sx={{ color: "#ffffff", mb: 2 }}>
               Course Category
             </Typography>
             <Link
               href="#"
               color="inherit"
-              sx={{ display: "block", mb: 1, color: "#ffffff" }}
+              sx={{
+                display: "block",
+                mb: 1,
+                color: "#ffffff",
+                textDecoration: "none",
+              }}
             >
               Fire Safety
             </Link>
             <Link
               href="#"
               color="inherit"
-              sx={{ display: "block", mb: 1, color: "#ffffff" }}
+              sx={{
+                display: "block",
+                mb: 1,
+                color: "#ffffff",
+                textDecoration: "none",
+              }}
             >
               Security
             </Link>
             <Link
               href="#"
               color="inherit"
-              sx={{ display: "block", mb: 1, color: "#ffffff" }}
+              sx={{
+                display: "block",
+                mb: 1,
+                color: "#ffffff",
+                textDecoration: "none",
+              }}
             >
               Health and Safety
             </Link>
             <Link
               href="#"
               color="inherit"
-              sx={{ display: "block", mb: 1, color: "#ffffff" }}
+              sx={{
+                display: "block",
+                mb: 1,
+                color: "#ffffff",
+                textDecoration: "none",
+              }}
             >
               Education
             </Link>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={3} sx={{ px: 2 }}>
             <Typography variant="h6" sx={{ color: "#ffffff", mb: 2 }}>
               Contact Us
             </Typography>
@@ -195,7 +238,7 @@ export default function Footer() {
           }}
         >
           <Typography sx={{ color: "#ffffff" }}>
-            Copyright © 2023 EduLogic. All rights reserved.
+            Copyright © 2024 Rapid Service. All rights reserved.
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "right", mt: 0 }}>
             <Link href="#" color="inherit" sx={{ mx: 1, color: "#ffffff" }}>
