@@ -549,7 +549,6 @@
 //   </Card>
 // </Container>
 
-
 // {/* Health and Saftey card conatiner  */}
 
 // <Container
@@ -823,14 +822,6 @@
 //     </Box>
 //   </Card>
 // </Container>
-
-
-
-
-
-
-
-
 
 //       {/* new Secation  */}
 //       <Box
@@ -1140,8 +1131,6 @@
 //     </>
 //   );
 // }
-
-
 
 import React, { useState } from "react";
 import Footer from "../Component/HomePageComponent/Footer";
@@ -1462,7 +1451,10 @@ export default function FeaturedSection() {
                 justifyContent: "space-between",
               }}
             >
-              <Typography variant="h6" sx={{ color: "white", m: 2, mt: 8, ml: 4 }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "white", m: 2, mt: 8, ml: 4 }}
+              >
                 FIRE <br /> WARDEN
               </Typography>
               <Box sx={{ display: "flex", justifyContent: "flex-start", p: 1 }}>
@@ -1478,7 +1470,9 @@ export default function FeaturedSection() {
                 >
                   Book Now
                 </Button>
-                <Button sx={{ color: "white", m: 1, mb: 5 }}>View Details</Button>
+                <Button sx={{ color: "white", m: 1, mb: 5 }}>
+                  View Details
+                </Button>
               </Box>
             </Box>
           </Card>
@@ -1523,7 +1517,10 @@ export default function FeaturedSection() {
                 justifyContent: "space-between",
               }}
             >
-              <Typography variant="h6" sx={{ color: "white", m: 2, mt: 8, ml: 4 }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "white", m: 2, mt: 8, ml: 4 }}
+              >
                 FIRE <br /> MARSHAL
               </Typography>
               <Box sx={{ display: "flex", justifyContent: "flex-start", p: 1 }}>
@@ -1539,7 +1536,9 @@ export default function FeaturedSection() {
                 >
                   Book Now
                 </Button>
-                <Button sx={{ color: "white", m: 1, mb: 5 }}>View Details</Button>
+                <Button sx={{ color: "white", m: 1, mb: 5 }}>
+                  View Details
+                </Button>
               </Box>
             </Box>
           </Card>
@@ -1556,6 +1555,7 @@ export default function FeaturedSection() {
             justifyContent: "left",
             gap: "5px",
             width: "100%",
+            flexWrap: "wrap",
           }}
         >
           <Card
@@ -1569,9 +1569,11 @@ export default function FeaturedSection() {
           >
             <CardMedia
               component="img"
-              height="250"
-              image="/Image (7).png"
-              alt="Fire Warden"
+              // height="50"
+
+              image="/Image (9).png"
+              alt="Level 2 Door Supervisor Top Up Plus Emergency First Aid"
+              sx={{ objectFit: "cover" }}
             />
             <Box
               sx={{
@@ -1599,8 +1601,13 @@ export default function FeaturedSection() {
                 justifyContent: "space-between",
               }}
             >
-              <Typography variant="h6" sx={{ color: "white", m: 2, mt: 8, ml: 4 }}>
-                FIRE <br /> WARDEN
+              <Typography
+                variant="h6"
+                sx={{ color: "white", m: 2, mt: 4, ml: 4 }}
+              >
+                LEVEL 2 DOOR <br /> SUPERVISOR TOP UP <br />
+                PLUS EMERGENCY <br />
+                FIRST AID
               </Typography>
               <Box sx={{ display: "flex", justifyContent: "flex-start", p: 1 }}>
                 <Button
@@ -1615,7 +1622,9 @@ export default function FeaturedSection() {
                 >
                   Book Now
                 </Button>
-                <Button sx={{ color: "white", m: 1, mb: 5 }}>View Details</Button>
+                <Button sx={{ color: "white", m: 1, mb: 5 }}>
+                  View Details
+                </Button>
               </Box>
             </Box>
           </Card>
@@ -1630,9 +1639,16 @@ export default function FeaturedSection() {
           >
             <CardMedia
               component="img"
-              height="250"
-              image="/Image (8).png"
-              alt="Fire Marshal"
+              // height="250"
+              sx={{
+                width: 500, // Set the width as needed
+                height: 250, // Set the height as needed
+                objectFit: "contain", // Ensures the image aspect ratio is maintained
+                ml:25,
+              }}
+              image="/Image (10).png"
+              alt="Level 2 Security Guarding Top Up"
+              // sx={{ objectFit: "cover" }}
             />
             <Box
               sx={{
@@ -1660,8 +1676,86 @@ export default function FeaturedSection() {
                 justifyContent: "space-between",
               }}
             >
-              <Typography variant="h6" sx={{ color: "white", m: 2, mt: 8, ml: 4 }}>
-                FIRE <br /> MARSHAL
+              <Typography
+                variant="h6"
+                sx={{ color: "white", m: 2, mt: 4, ml: 3 }}
+              >
+                LEVEL 2 SECURITY <br />
+                GUARDING TOP UP
+              </Typography>
+              <Box sx={{ display: "flex", justifyContent: "flex-start", p: 1  }}>
+                <Button
+                  sx={{
+                    color: "white",
+                    backgroundColor: "red",
+                    "&:hover": { backgroundColor: "#ff3333" },
+                    m: 1,
+                    mb: 5,
+                    width: 100,
+                  }}
+                >
+                  Book Now
+                </Button>
+                <Button sx={{ color: "white", m: 1, mb: 5 }}>
+                  View Details
+                </Button>
+              </Box>
+            </Box>
+          </Card>
+          <Card
+            sx={{
+              position: "relative",
+              width: "48%",
+              mb: 2,
+              bgcolor: "#262F69",
+              height: 250,
+            }}
+          >
+            <CardMedia
+              component="img"
+              // height="250"
+              image="/Image (11).png"
+              alt="Level 2 Door Supervisor In Private Security Industry Plus Emergency First Aid"
+              // sx={{ objectFit: "cover" }}
+              sx={{
+                width: 500, // Set the width as needed
+                height: 250, // Set the height as needed
+                objectFit: "contain", // Ensures the image aspect ratio is maintained
+                ml:25,
+              }}
+            />
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                right: 0,
+                width: "100%",
+                height: "100%",
+                backgroundImage: 'url("/Vector.png")',
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "right top",
+                mr: 20,
+              }}
+            />
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <Typography
+                variant="h6"
+                sx={{ color: "white", m: 2, mt: 1, ml: 4 }}
+              >
+                LEVEL 2 DOOR <br />  SUPERVISOR IN<br />  PRIVATE SECURITY <br /> INDUSTRY PLUS<br /> 
+                EMERGENCY FIRST AID
               </Typography>
               <Box sx={{ display: "flex", justifyContent: "flex-start", p: 1 }}>
                 <Button
@@ -1676,7 +1770,82 @@ export default function FeaturedSection() {
                 >
                   Book Now
                 </Button>
-                <Button sx={{ color: "white", m: 1, mb: 5 }}>View Details</Button>
+                <Button sx={{ color: "white", m: 1, mb: 5 }}>
+                  View Details
+                </Button>
+              </Box>
+            </Box>
+          </Card>
+          <Card
+            sx={{
+              position: "relative",
+              width: "48%",
+              mb: 2,
+              bgcolor: "#262F69",
+              height: 250,
+            }}
+          >
+            <CardMedia
+              component="img"
+              // height="250"
+              sx={{
+                width: 500, // Set the width as needed
+                height: 250, // Set the height as needed
+                objectFit: "contain", // Ensures the image aspect ratio is maintained
+                ml:25,
+              }}
+              image="/Image (12).png"
+              alt="Level 2 Security Guarding In Private Security Industry"
+              // sx={{ objectFit: "cover" }}
+            />
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                right: 0,
+                width: "100%",
+                height: "100%",
+                backgroundImage: 'url("/Vector.png")',
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "right top",
+                mr: 20,
+              }}
+            />
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <Typography
+                variant="h6"
+                sx={{ color: "white", m: 2, mt: 3, ml: 2 }}
+              >
+                LEVEL 2 SECURITY <br />  GUARDING IN <br />  PRIVATE SECURITY<br /> INDUSTRY
+              </Typography>
+              <Box sx={{ display: "flex", justifyContent: "flex-start", p: 1 }}>
+                <Button
+                  sx={{
+                    color: "white",
+                    backgroundColor: "red",
+                    "&:hover": { backgroundColor: "#ff3333" },
+                    m: 1,
+                    mb: 5,
+                    width: 100,
+                  }}
+                >
+                  Book Now
+                </Button>
+                <Button sx={{ color: "white", m: 1, mb: 5 }}>
+                  View Details
+                </Button>
               </Box>
             </Box>
           </Card>
@@ -1706,9 +1875,16 @@ export default function FeaturedSection() {
           >
             <CardMedia
               component="img"
-              height="250"
-              image="/Image (7).png"
-              alt="Fire Warden"
+              // height="250"
+              image="/Image (13).png"
+              alt="Emergency First Aid Training at Workplace"
+              // sx={{ objectFit: "cover" }}
+              sx={{
+                width: 500, // Set the width as needed
+                height: 250, // Set the height as needed
+                objectFit: "contain", // Ensures the image aspect ratio is maintained
+                ml:25,
+              }}
             />
             <Box
               sx={{
@@ -1736,8 +1912,11 @@ export default function FeaturedSection() {
                 justifyContent: "space-between",
               }}
             >
-              <Typography variant="h6" sx={{ color: "white", m: 2, mt: 8, ml: 4 }}>
-                FIRE <br /> WARDEN
+              <Typography
+                variant="h6"
+                sx={{ color: "white", m: 2, mt: 8, ml: 4 }}
+              >
+                EMERGENCY FIRST <br /> AID  TRAINING AT<br /> WORKPLACE
               </Typography>
               <Box sx={{ display: "flex", justifyContent: "flex-start", p: 1 }}>
                 <Button
@@ -1752,7 +1931,9 @@ export default function FeaturedSection() {
                 >
                   Book Now
                 </Button>
-                <Button sx={{ color: "white", m: 1, mb: 5 }}>View Details</Button>
+                <Button sx={{ color: "white", m: 1, mb: 5 }}>
+                  View Details
+                </Button>
               </Box>
             </Box>
           </Card>
@@ -1767,9 +1948,16 @@ export default function FeaturedSection() {
           >
             <CardMedia
               component="img"
-              height="250"
-              image="/Image (8).png"
-              alt="Fire Marshal"
+              // height="250"
+              image="/Image (14).png"
+              alt="Traffic Marshal"
+              // sx={{ objectFit: "cover" }}
+              sx={{
+                width: 500, // Set the width as needed
+                height: 250, // Set the height as needed
+                objectFit: "contain", // Ensures the image aspect ratio is maintained
+                ml:25,
+              }}
             />
             <Box
               sx={{
@@ -1797,8 +1985,11 @@ export default function FeaturedSection() {
                 justifyContent: "space-between",
               }}
             >
-              <Typography variant="h6" sx={{ color: "white", m: 2, mt: 8, ml: 4 }}>
-                FIRE <br /> MARSHAL
+              <Typography
+                variant="h6"
+                sx={{ color: "white", m: 2, mt: 8, ml: 4 }}
+              >
+                TRAFFIC <br /> MARSHAL
               </Typography>
               <Box sx={{ display: "flex", justifyContent: "flex-start", p: 1 }}>
                 <Button
@@ -1813,7 +2004,9 @@ export default function FeaturedSection() {
                 >
                   Book Now
                 </Button>
-                <Button sx={{ color: "white", m: 1, mb: 5 }}>View Details</Button>
+                <Button sx={{ color: "white", m: 1, mb: 5 }}>
+                  View Details
+                </Button>
               </Box>
             </Box>
           </Card>
@@ -1830,6 +2023,7 @@ export default function FeaturedSection() {
             justifyContent: "left",
             gap: "5px",
             width: "100%",
+            flexWrap: "wrap",
           }}
         >
           <Card
@@ -1843,9 +2037,16 @@ export default function FeaturedSection() {
           >
             <CardMedia
               component="img"
-              height="250"
-              image="/Image (7).png"
-              alt="Fire Warden"
+              // height="250"
+              image="/Image (15).png"
+              alt="Level 3 Award In Education"
+              // sx={{ objectFit: "cover" }}
+              sx={{
+                width: 500, // Set the width as needed
+                height: 250, // Set the height as needed
+                objectFit: "contain", // Ensures the image aspect ratio is maintained
+                ml:25,
+              }}
             />
             <Box
               sx={{
@@ -1873,8 +2074,11 @@ export default function FeaturedSection() {
                 justifyContent: "space-between",
               }}
             >
-              <Typography variant="h6" sx={{ color: "white", m: 2, mt: 8, ml: 4 }}>
-                FIRE <br /> WARDEN
+              <Typography
+                variant="h6"
+                sx={{ color: "white", m: 2, mt: 8, ml: 4 }}
+              >
+                LEVEL 3 AWARD  IN <br /> EDUCATION
               </Typography>
               <Box sx={{ display: "flex", justifyContent: "flex-start", p: 1 }}>
                 <Button
@@ -1889,7 +2093,9 @@ export default function FeaturedSection() {
                 >
                   Book Now
                 </Button>
-                <Button sx={{ color: "white", m: 1, mb: 5 }}>View Details</Button>
+                <Button sx={{ color: "white", m: 1, mb: 5 }}>
+                  View Details
+                </Button>
               </Box>
             </Box>
           </Card>
@@ -1904,9 +2110,16 @@ export default function FeaturedSection() {
           >
             <CardMedia
               component="img"
-              height="250"
-              image="/Image (8).png"
-              alt="Fire Marshal"
+              // height="250"
+              image="/Image (16).png"
+              alt="Level 4 IQA Course-Internal Quality Assurance"
+              // sx={{ objectFit: "cover" }}
+              sx={{
+                width: 500, // Set the width as needed
+                height: 250, // Set the height as needed
+                objectFit: "contain", // Ensures the image aspect ratio is maintained
+                ml:25,
+              }}
             />
             <Box
               sx={{
@@ -1934,8 +2147,11 @@ export default function FeaturedSection() {
                 justifyContent: "space-between",
               }}
             >
-              <Typography variant="h6" sx={{ color: "white", m: 2, mt: 8, ml: 4 }}>
-                FIRE <br /> MARSHAL
+              <Typography
+                variant="h6"
+                sx={{ color: "white", m: 2, mt: 8, ml: 4 }}
+              >
+                LEVEL 4 IQA  <br />COURSE  INTERNAL 
               </Typography>
               <Box sx={{ display: "flex", justifyContent: "flex-start", p: 1 }}>
                 <Button
@@ -1950,7 +2166,83 @@ export default function FeaturedSection() {
                 >
                   Book Now
                 </Button>
-                <Button sx={{ color: "white", m: 1, mb: 5 }}>View Details</Button>
+                <Button sx={{ color: "white", m: 1, mb: 5 }}>
+                  View Details
+                </Button>
+              </Box>
+            </Box>
+          </Card>
+          <Card
+            sx={{
+              position: "relative",
+              width: "48%",
+              mb: 2,
+              bgcolor: "#262F69",
+              height: 250,
+              alignSelf: "center",
+            }}
+          >
+            <CardMedia
+              component="img"
+              // height="250"
+              image="/Image (17).png"
+              alt="Level 4 IQA Course-Internal Quality Assurance"
+              // sx={{ objectFit: "cover" }}
+              sx={{
+                width: 500, // Set the width as needed
+                height: 250, // Set the height as needed
+                objectFit: "contain", // Ensures the image aspect ratio is maintained
+                ml:25,
+              }}
+            />
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                right: 0,
+                width: "100%",
+                height: "100%",
+                backgroundImage: 'url("/Vector.png")',
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "right top",
+                mr: 20,
+              }}
+            />
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <Typography
+                variant="h6"
+                sx={{ color: "white", m: 2, mt: 8, ml: 4 }}
+              >
+     Quality Assurance <br/>- IQA Course
+              </Typography>
+              <Box sx={{ display: "flex", justifyContent: "flex-start", p: 1 }}>
+                <Button
+                  sx={{
+                    color: "white",
+                    backgroundColor: "red",
+                    "&:hover": { backgroundColor: "#ff3333" },
+                    m: 1,
+                    mb: 5,
+                    width: 100,
+                  }}
+                >
+                  Book Now
+                </Button>
+                <Button sx={{ color: "white", m: 1, mb: 5 }}>
+                  View Details
+                </Button>
               </Box>
             </Box>
           </Card>
@@ -2070,7 +2362,7 @@ export default function FeaturedSection() {
                     mt: 2,
                     maxWidth: "60%",
                   }}
-                  paragraph // This tells Material-UI that this Typography component is meant to be used as a paragraph
+                  paragraph
                 >
                   Lorem ipsum is a placeholder text commonly used to demonstrate
                   the visual form of a document or a typeface without relying on
@@ -2222,8 +2514,8 @@ export default function FeaturedSection() {
                 }}
               >
                 Lorem ipsum is a placeholder text commonly used to demonstrate
-                the visual form of a document or a typeface without meaningful
-                content.
+                the visual form of a document or a typeface without relying on
+                meaningful content.
               </Typography>
               <img
                 src="Layer_1.png"
