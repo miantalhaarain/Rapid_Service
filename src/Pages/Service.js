@@ -2,6 +2,7 @@
 import React from "react";
 import Footer from "../Component/HomePageComponent/Footer";
 import OurService from "../Component/ServicePageComponent/OurService";
+import ScrollSection from "../Component/ServicePageComponent/ScrollSection";
 
 import {
   Container,
@@ -137,6 +138,9 @@ const Service = () => {
         </Grid>
       </Container>
       <OurService />
+      <Box sx={{ mb: 7 }}> {/* Added Box with margin bottom */}
+        <ScrollSection />
+      </Box>
       <Footer />
     </>
   );

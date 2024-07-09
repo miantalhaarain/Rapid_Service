@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Homepage from './Pages/HomePage';
 import AboutUs from './Pages/AboutUs';
 import Service from './Pages/Service'; // Import the new Service page
@@ -13,7 +13,8 @@ const App = () => {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Homepage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Service />} /> {/* Add the new route */}
           {/* Add other routes here */}
