@@ -13,7 +13,7 @@ export default function Footer() {
     <Box sx={{ backgroundColor: "#262f69", py: 6 }}>
       <Container
         maxWidth="lg"
-        sx={{ mx: 2 }}  // Margin added on left and right
+        sx={{ mx: 5 }}  // Margin added on left and right
       >
         <Grid container spacing={2}> {/* Decreased spacing between columns */}
           <Grid item xs={12} md={3} sx={{ px: 2 }}> {/* Margin added to each column */}
