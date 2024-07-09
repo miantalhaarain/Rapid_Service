@@ -1424,7 +1424,8 @@ export default function FeaturedSection() {
               // height="250"
               sx={{
                 width: 500, // Set the width as needed
-                height: 250, // Set the height as needed
+                // height: 250, // Set the height as needed
+                
                 objectFit: "contain", // Ensures the image aspect ratio is maintained
                 ml: 12,
               }}
