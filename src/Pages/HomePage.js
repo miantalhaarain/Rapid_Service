@@ -227,14 +227,14 @@ export default function FeaturedSection() {
         </Typography>
       </Box>
 
-      <Container sx={{ mt: -5 }}>
+      <Container sx={{ mt: -5,ml:7}}>
         <Box
           sx={{
             backgroundColor: "#f5f5f5",
             borderRadius: "8px",
             p: 2,
             display: "flex",
-            maxWidth: "80%",
+            maxWidth: "100%",
             justifyContent: "space-around",
             alignItems: "center",
             flexWrap: "wrap",
