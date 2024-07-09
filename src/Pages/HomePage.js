@@ -234,7 +234,7 @@ export default function FeaturedSection() {
             borderRadius: "8px",
             p: 2,
             display: "flex",
-            maxWidth: "100%",
+            maxWidth: "93%",
             justifyContent: "space-around",
             alignItems: "center",
             flexWrap: "wrap",
