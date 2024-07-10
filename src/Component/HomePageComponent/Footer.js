@@ -12,11 +12,10 @@ export default function Footer() {
   return (
     <Box sx={{ backgroundColor: "#262f69", py: 6 }}>
       <Container
-        maxWidth="lg"
-        sx={{ mx: 2 }}  // Margin added on left and right
+    // Margin added on left and right
       >
-        <Grid container spacing={2}> {/* Decreased spacing between columns */}
-          <Grid item xs={12} md={3} sx={{ px: 2 }}> {/* Margin added to each column */}
+        <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}> {/* Decreased spacing between columns */}
+          <div style={{width:'25%'}}> 
             <Box>
               <img
                 src="logo-01 copy 1.png"
@@ -75,8 +74,8 @@ export default function Footer() {
                 </Link>
               </Box>
             </Box>
-          </Grid>
-          <Grid item xs={12} md={3} sx={{ px: 2 }}>
+          </div>
+          <div style={{width:'20%'}}>
             <Typography variant="h6" sx={{ color: "#ffffff", mb: 2 }}>
               Quick Links
             </Typography>
@@ -128,8 +127,8 @@ export default function Footer() {
             >
               News & Articles
             </Link>
-          </Grid>
-          <Grid item xs={12} md={3} sx={{ px: 2 }}>
+          </div>
+          <div style={{width:'20%'}}>
             <Typography variant="h6" sx={{ color: "#ffffff", mb: 2 }}>
               Course Category
             </Typography>
@@ -181,8 +180,8 @@ export default function Footer() {
             >
               Education
             </Link>
-          </Grid>
-          <Grid item xs={12} md={3} sx={{ px: 2 }}>
+          </div>
+          <div style={{width:'25%'}}>
             <Typography variant="h6" sx={{ color: "#ffffff", mb: 2 }}>
               Contact Us
             </Typography>
@@ -225,14 +224,19 @@ export default function Footer() {
               <EmailIcon sx={{ marginRight: 1 }} />
               contact@rapidservicesolutions.co.uk
             </Typography>
-          </Grid>
-        </Grid>
+          </div>
+        </div>
+        <Grid sx={{display:'flex', justifyContent:'space-between'
+        }}>
         <Box
           sx={{
-            borderTop: "1px solid #ffffff",
+            borderTop: "1px solid yellow",
+            width:'100%',
             mt: 3,
             pt: 3,
             display: "flex",
+            // backgroundColor:'blue',
+            
             justifyContent: "space-between",
             alignItems: "center",
           }}
@@ -252,6 +256,7 @@ export default function Footer() {
             </Link>
           </Box>
         </Box>
+        </Grid>
       </Container>
     </Box>
   );

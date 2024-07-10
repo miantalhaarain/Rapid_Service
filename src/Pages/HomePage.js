@@ -85,12 +85,15 @@ export default function FeaturedSection() {
           px: { xs: 4, md: 5, lg: 7 },
         }}
       >
-        <Container
-          maxWidth="lg"
-          sx={{
+        <div
+          // maxWidth="lg"
+          style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "center",
+            // justifyContent: "center",
+            // backgroundColor:'red',
+           width:'78%'
+           
           }}
         >
           <Grid
@@ -195,7 +198,7 @@ export default function FeaturedSection() {
               </Box>
             </Grid>
           </Grid>
-        </Container>
+        </div>
       </Box>
       <Box
         sx={{
@@ -235,8 +238,12 @@ export default function FeaturedSection() {
         </Typography>
       </Box>
 
+
+
+
+
       {/* Buttons COde started here  */}
-      <Container sx={{ mt: -5, ml: 7 }}>
+      <Container sx={{ mt: -5 }} >
         <Box
           sx={{
             backgroundColor: "#f5f5f5",
@@ -247,6 +254,7 @@ export default function FeaturedSection() {
             justifyContent: "space-around",
             alignItems: "center",
             flexWrap: "wrap",
+            margin:'auto'
           }}
         >
           {["Fire Safety", "Security", "Health and Safety", "Education"].map(
@@ -279,6 +287,9 @@ export default function FeaturedSection() {
           </Box>
         )}
       </Container>
+
+
+
 
       {/* new Secation  */}
       <Box
@@ -358,12 +369,14 @@ export default function FeaturedSection() {
         <Container maxWidth="lg">
           <Box
             sx={{
-              backgroundColor: "#d9534f",
+              backgroundColor: "red",
               borderRadius: "8px",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               p: 3,
+              width:'91.3%',
+              margin:'auto'
             }}
           >
             <Box
@@ -376,7 +389,7 @@ export default function FeaturedSection() {
                     fontWeight: "bold",
                     color: "#ffffff",
                     mb: 1,
-                    backgroundColor: "#d9534f",
+                    backgroundColor: "red",
                     p: 1,
                     borderRadius: "8px",
                   }}
@@ -412,7 +425,7 @@ export default function FeaturedSection() {
                   Learn More →
                 </Button>
               </Box>
-              <Box sx={{ flex: "1 1 0%", textAlign: "right" }}>
+              <Box sx={{ flex: "1 1 0%", textAlign: "center" }}>
                 <img
                   src="DEP2012-0133-02 1.png"
                   alt="SIA License"
@@ -427,7 +440,7 @@ export default function FeaturedSection() {
       {/* new Secation */}
       <Box
         sx={{
-          backgroundColor: "#262f69",
+          backgroundColor: "#262F69",
           py: 6,
           mt: 4,
         }}
@@ -440,6 +453,7 @@ export default function FeaturedSection() {
               color: "#ffffff",
               mb: 1,
               textAlign: "center",
+              fontSize:'24'
             }}
           >
             OUR SERVICES
@@ -453,12 +467,13 @@ export default function FeaturedSection() {
             }}
           >
             Lorem ipsum is a placeholder text commonly used to demonstrate the
-            visual form of a <br />
-            document or a typeface without relying on meaningful content. Lorem
+            visual form of a 
+            document <br />or a typeface without relying on meaningful content. Lorem
             ipsum may be used.
           </Typography>
           <Grid container spacing={3}
           ml={0}
+          style={{ width:'98%'}}
           mr={0}>
             {serviceData.map((service, index) => (
               <Grid item xs={12} md={4} key={index}>
