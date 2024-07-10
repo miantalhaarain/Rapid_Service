@@ -15,8 +15,10 @@ export default function Footer() {
 
     // Margin added on left and right
 
-        maxWidth="lg"
-        sx={{ mx: 5 }}  // Margin added on left and right
+        // maxWidth="lg"
+        sx={{ mx: 'auto',
+          // backgroundColor:'red'
+         }}  // Margin added on left and right
 
       >
         <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}> {/* Decreased spacing between columns */}
