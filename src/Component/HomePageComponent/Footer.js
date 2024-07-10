@@ -12,7 +12,12 @@ export default function Footer() {
   return (
     <Box sx={{ backgroundColor: "#262f69", py: 6 }}>
       <Container
+
     // Margin added on left and right
+
+        maxWidth="lg"
+        sx={{ mx: 5 }}  // Margin added on left and right
+
       >
         <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}> {/* Decreased spacing between columns */}
           <div style={{width:'25%'}}> 
